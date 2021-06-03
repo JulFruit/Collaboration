@@ -42,12 +42,16 @@ int main()
     //char* c= "abcdefg";
     // printf("%d\n",mylen(c));
     // EXERCICE 2
+    /*char* c="abedefg";
+    char * t =(char*) malloc(8*sizeof(char));
+    copy(t,c);
+    printf("%d\n",nmb_e(t));*/
+    // EXERCICE 3
     char* c="abedefg";
     char * t =(char*) malloc(8*sizeof(char));
     copy(t,c);
+    *t='e';
     printf("%d\n",nmb_e(t));
-    // EXERCICE 3
-
 
 }
 
