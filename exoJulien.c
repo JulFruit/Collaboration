@@ -9,6 +9,7 @@ printf("%d\n",l);
 
 
 char* s2 = "azertyuiop";
+printf("nb e:%d\n",nbe(s2));
 char* s3 = malloc(10* sizeof(char));
 copi(s2,s3);
 
@@ -40,4 +41,18 @@ void copi(char* s1,char* s2){
 	}
 	s2 = s;
 
+}
+
+int nbe(char* s){
+	int n =0;
+	char* s2=s;
+	while(*s2){
+		if(*s2 == 'e'){
+			n++;
+		}
+		s2++;
+	}
+
+
+	return n;
 }
