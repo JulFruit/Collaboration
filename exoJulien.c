@@ -13,6 +13,9 @@ printf("nb e:%d\n",nbe(s2));
 char* s3 = malloc(10* sizeof(char));
 copi(s2,s3);
 
+*s3 = 'c';
+
+
 while(*s3){
 	printf("%c",*s3);
 	++s3;
